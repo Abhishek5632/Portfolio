@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gallery | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item active">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="gallery">
+  <h1>Gallery</h1>
+  <p>Project screenshots and UI previews.</p>
+
+  <!-- Category Navbar -->
+  <div class="gallery-nav">
+    <button class="gbtn active" onclick="filterGallery('personal')">Personal</button>
+    <button class="gbtn" onclick="filterGallery('projects')">Projects</button>
+    <button class="gbtn" onclick="filterGallery('achievements')">Achievements</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid" id="galleryGrid">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="personal">
+    <img src="https://images.unsplash.com/photo-1564869735813-2a94d0bb3497" class="projects">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a7b89e87" class="achievements">
+    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d" class="personal">
+    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" class="projects">
+    <img src="https://images.unsplash.com/photo-1556767576-cfba10e3f3df" class="achievements">
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+function filterGallery(category) {
+  const images = document.querySelectorAll(".gallery-grid img");
+  const buttons = document.querySelectorAll(".gbtn");
+  buttons.forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+  images.forEach(img => {
+    if (category === 'all' || img.classList.contains(category)) {
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>

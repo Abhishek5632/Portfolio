@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Resume | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section class="resume">
+  <h1>Resume</h1>
+  <p>Preview and download my updated resume below.</p>
+
+  <iframe src="your-resume.pdf" title="Abhishek Dixit Resume"></iframe>
+  <a href="your-resume.pdf" download>Download Full Resume</a>
+</section>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+document.querySelectorAll(".nav-item").forEach(link => {
+  if (window.location.pathname.includes(link.getAttribute("href"))) {
+    link.classList.add("active");
+  }
+});
+</script>
+<script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+    
+    document.querySelectorAll(".nav-item").forEach(link => {
+      if (window.location.pathname.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+      }
+    });
+    </script>
+    
+</body>
+</html>

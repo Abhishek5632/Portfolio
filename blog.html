@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Blog | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item active">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="blog">
+  <h1>My Blog</h1>
+  <p>Personal thoughts, experiences, and reflections — feel free to react!</p>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <h3>Why I Love Building AI Projects</h3>
+      <p>Working on AI-based systems like mammogram cancer detection has taught me how impactful technology can be when applied to healthcare. Combining deep learning with real-world problems is my favorite way to innovate.</p>
+      <div class="reactions">
+        <i class="fa-solid fa-thumbs-up"></i><span>26</span>
+        <i class="fa-solid fa-thumbs-down"></i><span>0</span>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <h3>My Thoughts on Design & Aesthetics</h3>
+      <p>I believe design should balance functionality and emotion. Dark themes with minimalist layouts inspire me to create something that feels personal and futuristic.</p>
+      <div class="reactions">
+        <i class="fa-solid fa-thumbs-up"></i><span>19</span>
+        <i class="fa-solid fa-thumbs-down"></i><span>1</span>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <h3>Balancing Tech and Creativity</h3>
+      <p>As someone who codes and designs, I’ve realized creativity isn’t limited to art — it lives in algorithms too. Every project is like choreography for the mind.</p>
+      <div class="reactions">
+        <i class="fa-solid fa-thumbs-up"></i><span>22</span>
+        <i class="fa-solid fa-thumbs-down"></i><span>0</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

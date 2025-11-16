@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item active">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="about-section">
+  <div class="about-box">
+    <h1>About Me</h1>
+    <p>
+      Hi, I’m <strong>Abhishek Dixit</strong> — an aspiring <span class="highlight">Full Stack Developer</span> and <span class="highlight">AI Enthusiast</span> who loves turning creative ideas into impactful digital experiences.  
+      My passion lies in exploring <strong>Machine Learning</strong>, <strong>Web Technologies</strong>, and <strong>Interactive UI Design</strong>.
+    </p>
+
+    <p>
+      Beyond code, I enjoy experimenting with design, user interfaces, and building smart solutions that merge creativity with logic.  
+      My goal is to develop technologies that not only perform efficiently — but also inspire innovation.
+    </p>
+
+    <p>
+      I’m currently pursuing my <strong>B.Tech in Information Technology</strong> and building projects using the <strong>MERN Stack</strong> while exploring AI-powered applications.
+    </p>
+  </div>
+
+  <div class="education-section">
+    <h2>Education</h2>
+
+    <div class="edu-card">
+      <h3>B.Tech in Information Technology</h3>
+      <p><i class="fa-solid fa-building-columns"></i> XYZ University — Lucknow, India</p>
+      <p>Prefinal Year (2023–2027) | GPA: 8.9</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Higher Secondary Education (12th Grade)</h3>
+      <p><i class="fa-solid fa-school"></i> ABC Public School — Lucknow, India</p>
+      <p>Completed: 2023 | Percentage: 89%</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>High School (10th Grade)</h3>
+      <p><i class="fa-solid fa-school-flag"></i> ABC Public School — Lucknow, India</p>
+      <p>Completed: 2021 | Percentage: 92%</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

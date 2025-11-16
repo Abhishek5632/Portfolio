@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Home | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item active">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="home">
+  <div class="home-container">
+    <!-- Left Side - Profile Photo -->
+    <div class="profile-pic">
+      <img src="" alt="Abhishek Dixit">
+    </div>
+
+    <!-- Right Side - Info -->
+    <div class="intro-text">
+      <h1>Hi, I'm <span>Abhishek Dixit</span></h1>
+      <h3>Prefinal Year IT Student | Aspiring MERN Developer | Tech Explorer</h3>
+
+      <div class="tag-list">
+        <span>AI Enthusiast</span>
+        <span>Web Developer</span>
+        <span>Machine Learning Explorer</span>
+        <span>Problem Solver</span>
+      </div>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Location</strong><br>Lucknow, India</div>
+        </div>
+        <div class="info-box">
+          <i class="fa-solid fa-lightbulb"></i>
+          <div><strong>Expertise</strong><br>MERN, AI/ML</div>
+        </div>
+        <div class="info-box">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong>Contact</strong><br>abhishekdixit@example.com</div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

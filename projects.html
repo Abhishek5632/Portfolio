@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Projects | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item active">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="projects-section">
+  <h1>My Projects</h1>
+  <p class="project-subtitle">A collection of my featured work — blending creativity, code, and design.</p>
+
+  <div class="project-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="project1.jpg" alt="Placement Prep Portal">
+      <div class="project-content">
+        <h2>Placement Prep Portal</h2>
+        <p>An all-in-one platform for coding prep, HR questions, and resume guidance to help students get ready for placements.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank" class="btn code-btn"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" target="_blank" class="btn live-btn"><i class="fa-solid fa-globe"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="project2.jpg" alt="Smart Route Planner">
+      <div class="project-content">
+        <h2>Smart Route Planner</h2>
+        <p>AI-based routing system showing red, yellow, and green zones for safety with interactive car movement and alerts.</p>
+        <div class="tags">
+          <span>Leaflet.js</span><span>GeoJSON</span><span>JavaScript</span><span>Express</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank" class="btn code-btn"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" target="_blank" class="btn live-btn"><i class="fa-solid fa-globe"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <img src="project3.jpg" alt="TravelBuddy">
+      <div class="project-content">
+        <h2>TravelBuddy</h2>
+        <p>A travel companion finder platform that connects travelers with similar destinations and interests.</p>
+        <div class="tags">
+          <span>MongoDB</span><span>Express</span><span>Node.js</span><span>REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank" class="btn code-btn"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" target="_blank" class="btn live-btn"><i class="fa-solid fa-globe"></i> Live</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Certificates | Abhishek Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">AD</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificates.html" class="nav-item active">Certificates</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="certificates">
+  <h1>Certificates</h1>
+  <p>Organized by <strong>Tech</strong> and <strong>Others</strong>.</p>
+
+  <!-- Category Tabs -->
+  <div class="category-tabs">
+    <button class="tab-btn active" onclick="showCategory('tech')">Tech</button>
+    <button class="tab-btn" onclick="showCategory('others')">Others</button>
+  </div>
+
+  <!-- Certificates Grid -->
+  <div class="cert-grid" id="tech">
+    <div class="cert-card">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-template-design-8b5f50a734ebfd72b76b1e7fcb825f29_screen.jpg" alt="Certificate 1">
+      <div class="cert-info">
+        <h3>Deep Learning Specialization</h3>
+        <p>Coursera • 2022</p>
+        <a href="#" target="_blank" class="view-btn">View</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-design-template-3a01b9a1e4e526a4e4f59c4e8e0c1f77_screen.jpg" alt="Certificate 2">
+      <div class="cert-info">
+        <h3>Computer Vision with TensorFlow</h3>
+        <p>Coursera • 2023</p>
+        <a href="#" target="_blank" class="view-btn">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cert-grid hidden" id="others">
+    <div class="cert-card">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-template-design-6ac27a3b19a834c42ef9bb83ab622a55_screen.jpg" alt="Certificate 3">
+      <div class="cert-info">
+        <h3>Public Speaking Excellence</h3>
+        <p>Udemy • 2024</p>
+        <a href="#" target="_blank" class="view-btn">View</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/award-certificate-template-design-3a45b92f37ff7e55c7e8c9a0f92b1f20_screen.jpg" alt="Certificate 4">
+      <div class="cert-info">
+        <h3>Leadership Workshop</h3>
+        <p>College Event • 2023</p>
+        <a href="#" target="_blank" class="view-btn">View</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2025 Abhishek Dixit</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+function showCategory(category) {
+  document.querySelectorAll('.cert-grid').forEach(grid => grid.classList.add('hidden'));
+  document.getElementById(category).classList.remove('hidden');
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
