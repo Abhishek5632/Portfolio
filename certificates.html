@@ -1,168 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Certificates | Abhishek Dixit</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | Abhishek Dixit</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
+
 <body>
 
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
 <header class="navbar">
-  <div class="nav-container">
-    <div class="logo">AD</div>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html" class="nav-item">Home</a>
-      <a href="projects.html" class="nav-item">Projects</a>
-      <a href="gallery.html" class="nav-item">Gallery</a>
-      <a href="skills.html" class="nav-item">Skills</a>
-      <a href="certificates.html" class="nav-item active">Certificates</a>
-      <a href="blog.html" class="nav-item">Blog</a>
-      <a href="resume.html" class="nav-item">Resume</a>
-      <a href="about.html" class="nav-item">About</a>
-      <a href="contact.html" class="nav-item">Contact</a>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
+
+    <div class="nav-container">
+
+        <div class="logo">
+            AD
+        </div>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks">
+
+            <a
+                href="index.html"
+                class="nav-item">
+
+                Home
+
+            </a>
+
+
+            <a
+                href="projects.html"
+                class="nav-item">
+
+                Projects
+
+            </a>
+
+
+            <a
+                href="gallery.html"
+                class="nav-item">
+
+                Gallery
+
+            </a>
+
+
+            <a
+                href="skills.html"
+                class="nav-item">
+
+                Skills
+
+            </a>
+
+
+            <a
+                href="certificates.html"
+                class="nav-item active">
+
+                Certificates
+
+            </a>
+
+
+            <a
+                href="blog.html"
+                class="nav-item">
+
+                Blog
+
+            </a>
+
+
+            <a
+                href="resume.html"
+                class="nav-item">
+
+                Resume
+
+            </a>
+
+
+            <a
+                href="about.html"
+                class="nav-item">
+
+                About
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="nav-item">
+
+                Contact
+
+            </a>
+
+        </nav>
+
+
+        <!-- Mobile Menu -->
+
+        <div
+            class="hamburger"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
 </header>
 
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
 <main>
+
+
 <section class="certificates">
-  <h1>Certificates</h1>
-  <p>Organized by <strong>Tech</strong> and <strong>Others</strong>.</p>
 
-  <!-- Category Tabs -->
-  <div class="category-tabs">
-    <button class="tab-btn active" onclick="showCategory('tech')">Tech</button>
-    <button class="tab-btn" onclick="showCategory('others')">Others</button>
-  </div>
 
-  <!-- Certificates Grid -->
- <!-- TECH CERTIFICATES -->
-<div class="cert-grid" id="tech">
+    <h1>
+        Certificates
+    </h1>
 
-  <div class="cert-card">
-    <img src="./certificateImg/C1.png">
-    <div class="cert-info">
-      <h3>Responsive Web Design Certification</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1qQwXB1EI5_26EVzEY1iBJe1dsZN9STYk" target="_blank" class="view-btn">View</a>
+
+    <p>
+        Explore my professional certifications and
+        job simulations.
+    </p>
+
+
+
+    <!-- =================================================
+         CATEGORY TABS
+    ================================================== -->
+
+    <div class="category-tabs">
+
+
+        <button
+            class="tab-btn active"
+            onclick="showCategory('tech', this)">
+
+            Tech
+
+        </button>
+
+
+        <button
+            class="tab-btn"
+            onclick="showCategory('others', this)">
+
+            Others
+
+        </button>
+
+
     </div>
-  </div>
 
-  <div class="cert-card">
-    <img src="./certificateImg/C2.png">
-    <div class="cert-info">
-      <h3>Basics of Python</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1NGtoVR8HAkyNES9hi3r5NyvMv7N-RDSd" target="_blank" class="view-btn">View</a>
+
+
+    <!-- =================================================
+         TECH CERTIFICATES
+    ================================================== -->
+
+    <div
+        class="cert-grid"
+        id="tech">
+
+
+        <!-- C1 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C1.png"
+                alt="Responsive Web Design Certification">
+
+            <div class="cert-info">
+
+                <h3>
+                    Responsive Web Design Certification
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1qQwXB1EI5_26EVzEY1iBJe1dsZN9STYk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C2 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C2.png"
+                alt="Basics of Python">
+
+            <div class="cert-info">
+
+                <h3>
+                    Basics of Python
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1NGtoVR8HAkyNES9hi3r5NyvMv7N-RDSd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C3 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C3.png"
+                alt="Cybersecurity Foundation">
+
+            <div class="cert-info">
+
+                <h3>
+                    Cybersecurity Foundation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1Hx-5_jZkz8HHLL9gzGC8O5AcS11yry9u"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C4 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C4.png"
+                alt="GenAI Powered Data Analytics">
+
+            <div class="cert-info">
+
+                <h3>
+                    GenAI Powered Data Analytics Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1YkVXQeJKTI16N8wYoeMOWGDaDBbwJM6W"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C5 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C5.png"
+                alt="Cybersecurity Analyst">
+
+            <div class="cert-info">
+
+                <h3>
+                    Cybersecurity Analyst Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1YFxK6B6Y7F-0-S4irah85TWiVoxQktnw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C6 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C6.png"
+                alt="ESG Job Simulation">
+
+            <div class="cert-info">
+
+                <h3>
+                    ESG Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1znUBzJhSIjh2fOUKZz2nsPSi8qMZrJRK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C7 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C7.png"
+                alt="Technology Job Simulation">
+
+            <div class="cert-info">
+
+                <h3>
+                    Technology Job Simulation (Coding Development)
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1aK838oE1RyPoR-fFfXd7yEYfyxj_0zHw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C8 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C8.png"
+                alt="Data Analytics Job Simulation">
+
+            <div class="cert-info">
+
+                <h3>
+                    Data Analytics Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1Nd60kER8qQAUT9b_SvSLXjTHv7vQI6zJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C9 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C9.png"
+                alt="TCS iON Career Edge">
+
+            <div class="cert-info">
+
+                <h3>
+                    TCS iON Career Edge - IT for Non-IT
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1mdxNBk06XPNG-klNhv2ZS-uDuhMkeMx-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C10 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C10.png"
+                alt="Technology Consulting">
+
+            <div class="cert-info">
+
+                <h3>
+                    Technology Consulting Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1wz6kfWEwYE4ikHibcQdPzX_t9DNtnj-A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C11 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C11.png"
+                alt="Off-Premise Sales">
+
+            <div class="cert-info">
+
+                <h3>
+                    Off-Premise Sales Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1KzQALQui9t9-FuSoAO98kPuIotvse6X1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C12 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C12.png"
+                alt="Solutions Architecture">
+
+            <div class="cert-info">
+
+                <h3>
+                    Solutions Architecture Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1X7jE_zHq8TS2sDK4WTx46HD919yK00TP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C14 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C14.png"
+                alt="Intro to Technology Apprenticeship">
+
+            <div class="cert-info">
+
+                <h3>
+                    Intro to Technology Apprenticeship Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1yH51CJ6-PgF_VqJb60WDvXEYC-bOD21J"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C15 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C15.png"
+                alt="Fundamentals of Cybersecurity">
+
+            <div class="cert-info">
+
+                <h3>
+                    Fundamentals of Cybersecurity (EDU-102)
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1WXzEhuXDvDHHrrKfWd_Rxeo6JOx0yO4u"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- C16 -->
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/C16.png"
+                alt="Advanced Software Engineering">
+
+            <div class="cert-info">
+
+                <h3>
+                    Advanced Software Engineering Job Simulation
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="https://drive.google.com/open?id=1cB_GJKSHDn3Cf1cv3jauOs1XG9qptdg5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+
     </div>
-  </div>
 
-  <div class="cert-card">
-      <img src="./certificateImg/C3.png"> <div class="cert-info">
-      <h3>Cybersecurity Foundation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1Hx-5_jZkz8HHLL9gzGC8O5AcS11yry9u" target="_blank" class="view-btn">View</a>
+
+
+    <!-- =================================================
+         OTHER CERTIFICATES
+    ================================================== -->
+
+    <div
+        class="cert-grid"
+        id="others"
+        style="display: none;">
+
+        <!--
+
+        Add your other certificates here.
+
+        Example:
+
+        <div class="cert-card">
+
+            <img
+                src="./certificateImg/other1.png"
+                alt="Other Certificate">
+
+            <div class="cert-info">
+
+                <h3>
+                    Certificate Name
+                </h3>
+
+                <p>
+                    2024
+                </p>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    class="view-btn">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+        -->
+
     </div>
-  </div>
 
-  <div class="cert-card">
-     <img src="./certificateImg/C4.png"> <div class="cert-info">
-      <h3>GenAI Powered Data Analytics Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1YkVXQeJKTI16N8wYoeMOWGDaDBbwJM6W" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
 
-  <div class="cert-card">
-      <img src="./certificateImg/C5.png"> <div class="cert-info">
-      <h3>Cybersecurity Analyst Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1YFxK6B6Y7F-0-S4irah85TWiVoxQktnw" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+</section>
 
-  <div class="cert-card">
-      <img src="./certificateImg/C6.png"> <div class="cert-info">
-      <h3>ESG Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1znUBzJhSIjh2fOUKZz2nsPSi8qMZrJRK" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+</main>
 
-  <div class="cert-card">
-      <img src="./certificateImg/C7.png"> <div class="cert-info">
-      <h3>Technology Job Simulation (Coding Development)</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1aK838oE1RyPoR-fFfXd7yEYfyxj_0zHw" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
 
-  <div class="cert-card">
-     <img src="./certificateImg/C8.png"> <div class="cert-info">
-      <h3>Data Analytics Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1Nd60kER8qQAUT9b_SvSLXjTHv7vQI6zJ" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
 
-  <div class="cert-card">
-      <img src="./certificateImg/C9.png"> <div class="cert-info">
-      <h3>TCS iON Career Edge - IT for Non-IT</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1mdxNBk06XPNG-klNhv2ZS-uDuhMkeMx-" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-  <div class="cert-card">
-   <img src="./certificateImg/C10.png">
-    <div class="cert-info">
-      <h3>Technology Consulting Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1wz6kfWEwYE4ikHibcQdPzX_t9DNtnj-A" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+<footer>
 
-  <div class="cert-card">
-   <img src="./certificateImg/C11.png"> <div class="cert-info">
-      <h3>Off-Premise Sales Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1KzQALQui9t9-FuSoAO98kPuIotvse6X1" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+    © 2025 Abhishek Dixit
 
-  <div class="cert-card">
-   <img src="./certificateImg/C12.png"><div class="cert-info">
-      <h3>Solutions Architecture Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1X7jE_zHq8TS2sDK4WTx46HD919yK00TP" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+</footer>
 
-  <div class="cert-card">
- <img src="./certificateImg/C14.png"> <div class="cert-info">
-      <h3>Intro to Technology Apprenticeship Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1yH51CJ6-PgF_VqJb60WDvXEYC-bOD21J" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
 
-  <div class="cert-card">
-   <img src="./certificateImg/C15.png"> <div class="cert-info">
-      <h3>Fundamentals of Cybersecurity (EDU-102)</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1WXzEhuXDvDHHrrKfWd_Rxeo6JOx0yO4u" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
 
-  <div class="cert-card">
-   <img src="./certificateImg/C16.png"> <div class="cert-info">
-      <h3>Advanced Software Engineering Job Simulation</h3>
-      <p>2024</p>
-      <a href="https://drive.google.com/open?id=1cB_GJKSHDn3Cf1cv3jauOs1XG9qptdg5" target="_blank" class="view-btn">View</a>
-    </div>
-  </div>
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
-</div>
+<script>
+
+
+// =====================================================
+// MOBILE MENU
+// =====================================================
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList
+        .toggle("active");
+
+}
+
+
+
+// =====================================================
+// CERTIFICATE CATEGORY FILTER
+// =====================================================
+
+function showCategory(category, button) {
+
+    // Get all certificate grids
+
+    const categories =
+        document.querySelectorAll(".cert-grid");
+
+
+    // Hide every category
+
+    categories.forEach(section => {
+
+        section.style.display = "none";
+
+    });
+
+
+    // Show selected category
+
+    const selected =
+        document.getElementById(category);
+
+
+    if (selected) {
+
+        selected.style.display = "grid";
+
+    }
+
+
+    // Update active tab
+
+    document
+        .querySelectorAll(".tab-btn")
+        .forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+    if (button) {
+
+        button.classList.add("active");
+
+    }
+
+}
+
+
+
+// =====================================================
+// ACTIVE NAVIGATION
+// =====================================================
+
+document
+    .querySelectorAll(".nav-item")
+    .forEach(link => {
+
+
+        const currentPage =
+            window.location.pathname
+                .split("/")
+                .pop();
+
+
+        const linkPage =
+            link.getAttribute("href");
+
+
+        if (currentPage === linkPage) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+
+</script>
+
+
+</body>
+
+</html>
